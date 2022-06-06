@@ -10,14 +10,13 @@ $(document).ready(function() {
     let groceriesFinal = [];
     groceries.sort();
     groceries.forEach(function(item) {
-      groceriesFinal += capitalize(item);
+      groceriesFinal.push(capitalize(item));
     })
     console.log(groceriesFinal);
 
    function capitalize(word) {
    let str;
-   str = word.charAt(0);
-   str.toUpperCase();
+   str = word.charAt(0).toUpperCase();
    str += word.slice(1);
    console.log(str)
    return str
